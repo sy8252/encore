@@ -1,0 +1,468 @@
+
+
+:root {
+ --primary-color:#333333;
+ --primary-color-light:#444444;
+ --secondary-color:#;
+ --secondary-color-black:#BC0808;
+ --text-light:#333333;
+ --white: #ffffff;
+ --max-width:1200px;
+
+ --test:#ffffff;
+ --testt: #333333;
+
+ --text: #FFEA00;
+ --tet: #FFEA00;
+
+ --navnp: whitesmoke; 
+
+ --contxt: whitesmoke;
+
+}
+
+html, body {
+    height: 100%; 
+    margin: 0; 
+    padding: 0; 
+    overflow-x: hidden;
+  }
+  
+body {
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: black ;
+    /*   */
+}
+
+::-webkit-scrollbar {
+    display: none; 
+}
+
+/* Encore Tickets */
+.EncoreTickets {
+position: fixed;
+width: 500px;
+top: 5px;
+left: 15px;
+
+font-family: 'Bebas Neue';
+font-style: normal;
+font-weight: 400;
+font-size: 50px;
+display: flex;
+align-items: center;
+text-align: left;
+text-decoration: none;
+z-index: 100;
+
+color:var(--navnp);
+display: inline;
+}
+
+
+nav {
+    background-color: black;
+    position: fixed;        
+   	top: 0;              
+    left: 0;              
+    width: 100%;
+    text-align: center; 
+    padding: 10px 0;
+    line-height: 30px;
+    z-index: 99;
+    
+    display: inline;
+    transition: color 0.4s ease-in-out;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    padding: 0;
+    padding-right: 50px;
+    
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    line-height: inherit;
+    
+}
+
+nav ul li a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: inherit;
+    color: var(--navnp);
+}
+
+nav ul li a:hover {
+    opacity: 0.7;
+    transition: .5s;
+}
+
+#profileicon {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 10px;
+    z-index: 100;
+        padding-right: 10px;
+    
+}
+
+#profileicon:hover {
+    opacity: 0.7;
+    transition: .5s;
+}
+
+       
+
+/*search*/
+
+input::placeholder {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 8px;
+    margin: 0px auto;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 500px;
+    justify-content: center; 
+    align-items: center;  
+}
+
+input[type="search"] {
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    padding: 10px;
+    z-index: 100;
+    position: fixed;
+    margin-right: 190px;
+    margin-top: 17px;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+button[type="SEARCH"] {    
+    border: none;
+    border-radius: 4px;
+    margin-left: 170px;
+    margin-top: 17px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 100;
+    position: fixed;
+    background: transparent;
+
+}
+
+button[type="SEARCH"]:active {
+    background-color: #555555;
+}
+
+.featured {
+    margin-top: 60px;
+    margin-bottom: 0px;
+}
+
+.slider {
+    height: 300px;
+    margin-top: 20px;
+    position: relative;
+    margin-bottom: 250px;
+}
+
+.slider .list {
+    display: flex;
+    position: relative;
+    transition: left 0.5s ease-in-out;
+}
+
+.slider .list .banner {
+    flex-shrink: 0;  
+    width: 100%;     
+    height: 300px;   
+    position: relative;
+}
+
+.slider .list .banner {
+    opacity: 0;
+    transition: 1s;
+}
+
+.slider .list .banner img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.slider .list .banner::after{
+    content:'';
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.slider .list .banner.active{
+    opacity: 1;
+    z-index: 10;
+}
+
+.arrows {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 20;
+    transform: translateX(-50%);
+}
+
+.arrows button{
+    background-color: transparent;
+    border: none;
+    font-family: monospace;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: x-large;
+    transition: .5s;
+    margin-left: -50px;
+    margin-right: -50px;
+
+    color: var(--navnp);
+}
+
+.arrows button:hover{
+    background-color: #eee;
+    color: black;
+}
+
+.dots{
+    position: absolute;
+    bottom: -190px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+    padding-inline-start: 0;
+}
+.dots li{
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+    margin: 0 10px;
+    transition: 1s;
+
+    background-color: var(--navnp);
+}
+
+.dots li.active{
+    width: 30px;
+}
+
+/* upcoming events */
+.upevents {
+    margin: 10px;
+    margin-bottom: 40px;
+    color: var(--contxt);
+}
+
+.concert {
+    display: flex;         
+    justify-content: space-evenly; 
+    }           
+
+.concert img {
+    max-width: 100%;       
+    height: 300px; 
+    width: 200; 
+    border-radius: 15px;
+    box-shadow: 0 0 20px 0px rgb(0, 0, 0);
+
+    
+
+    /*
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    */
+}
+
+.concert-container {
+  display: flex;
+  justify-content: space-evenly; 
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin-top: 10px;
+}
+
+.con_name {
+  text-align: center;
+  width: 200px;
+  font-family: 'Arial';
+  padding: 0;
+}
+
+
+.con_info {
+    font-family: Arial;
+    font-size: 12px;
+    padding-bottom: 50px;
+    
+    color: var(--text);
+}
+
+
+h2 {
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+    color: var(--navnp);
+    font-size: 50px;
+    text-align: center;
+}
+
+h3 {
+  margin: 0;
+  color: var(--contxt);
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    color: var(--contxt);
+}
+
+.container {
+    width: 100%; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: url('resources/red.png');
+    border-radius: 5px;
+    text-align: center;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: top;
+
+}
+
+
+/* ABOUT US */
+
+.description {
+    text-align: justify; 
+    display: flex;      
+    justify-content: center;  
+    align-items: center;  
+    height: 50%;
+    margin-left: 100px; 
+    margin-right: 100px; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.highlight {
+    color: red;
+}
+
+.tagline {
+    margin: 0;
+}
+
+
+
+/* BREADCRUMB */
+
+.breadcrumb ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin-top: 50px;
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+.breadcrumb li {
+    margin-right: 10px;
+}
+
+.breadcrumb li a {
+    text-decoration: none;
+    color: #940000;
+}
+
+.breadcrumb li::after {
+    content: " / ";
+    margin-left: 10px;
+    color: #999;
+}
+
+.breadcrumb li:last-child::after {
+    content: "";
+}
+
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: block;
+}
+
+
+
+
+/*DETAILS*/
+
+.deets-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;  
+    justify-items: right;
+    align-items: center;
+}
+
+.name-deets{
+    font-family: arial;
+    font-size: 2rem;
+}
+
+.info-deets{
+    font-family: arial;
+    font-size: 10px;
+}

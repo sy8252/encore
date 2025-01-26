@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'PT Sans Caption', sans-serif;
+  background-color: #000;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  overflow-y: auto;
+  font-family: 'PT Sans Caption', sans-serif;
+  background-color: #000;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.login-container {
+  background: #1a1a1a;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  max-height: 80vh;
+  overflow-y: auto;
+  margin-top: 20px;
+}
+
+.login-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.login-container::-webkit-scrollbar-track {
+  background-color: #333;
+  border-radius: 10px;
+}
+
+.login-container::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 10px;
+  border: 2px solid #333;
+}
+
+.login-container::-webkit-scrollbar-thumb:hover {
+  background-color: #b8010a;
+}
+
+.login-container::-webkit-scrollbar-button {
+  display: none;
+}
+
+.login-form h2 {
+  text-align: center;
+  font-family: arial;
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.white-text {
+  color: red;
+}
+
+.red-text {
+  color: #fff;
+  font-family: 'Bebas Neue';
+  font-size: 3rem;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  display: block;
+  color: #ddd;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #a93226;
+  background-color: #222;
+}
+
+.submit-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.login-btn {
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: red;
+  color: #fff;
+}
+
+.login-btn:hover {
+  background-color: #b8010a;
+}
+
+.back-btn {
+  background-color: #555;
+  color: #fff;
+  border: 1px solid #444;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.back-btn:hover {
+  background-color: #444;
+}
+
+.register-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.register-link a {
+  color: red;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
