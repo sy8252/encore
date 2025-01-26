@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Encore Tickets</title>
+		<link rel="stylesheet" href="encoree.css"> 
+		<link rel="icon" href="resources/favicon.ico" sizes="192x192" type="image/png">
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+		
+	</head>
+
+	<body>
+		<header>
+				<a href="encoree.html" class="EncoreTickets">ENCORE TICKETS</a>
+
+			<div class="search-container">
+				<form action="/search" method="get">
+				  	<input type="search" id="search" name="search" placeholder="Search for Events and Artists...">
+				 	<button type="SEARCH">
+						<img src="resources/searchFFF.png"  width="25" height="25">
+					</button>
+				</form>
+			</div>
+			
+		<nav>
+	            <ul>
+	                <li><a href="encoree.html">HOME</a></li>
+	                <li><a href="events.html">EVENTS</a></li>
+	                <li><a href="contact.html">CONTACT US</a></li>
+	                <li><a href="about.html">ABOUT US</a></li>
+
+					<button id="profileicon">
+						<a href="profile.php">
+							<img src="resources/profileicon.png" width="25" height="25">
+						</a>
+					</button>
+	            </ul>
+	    	</nav>
+	    </header>
+
+		<h2 class="featured">
+			Featured Shows
+			</h2>
+
+<div class="slider">
+	<div class="list">
+		<div class="banner active">
+			<img src="resources/carousel0.jpg" height="400">
+		</div>
+		<div class="banner">
+			<img src="resources/carousel1.jpg" height="400">
+		</div>
+		<div class="banner">
+			<img src="resources/carousel2.jpg" height="400">
+		</div>
+		<div class="banner">
+			<img src="resources/carousel3.jpg" height="400">
+		</div>
+	</div>
+
+	<div class="arrows">
+		<button id="prev"><</button>
+		<button id="next">></button>
+	</div>
+
+	<ul class="dots">
+		<li class="active"></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>
+		
+<div class = "container">
+		<h2 class="upevents">
+		UPCOMING EVENTS
+		</h2>
+
+<div class="concert">
+
+		<button onclick="location.href='details/bini.html'">
+			<img src="resources/BiniPoster.jpg">
+		</button>
+			
+
+		<button onclick="location.href='details/silakbo.html'">
+			<img src="resources/CupOfJoeposter.jpg">
+		</button>
+		
+
+		<button onclick="location.href='details/maroon5.html'">
+			<img src="resources/Maroon5Poster.jpg">
+		</button>
+		
+		<button onclick="location.href='details/cas.html'">
+			<img src="resources/CASPoster.jpg">
+		</button>
+		
+		<button onclick="location.href='details/decemberavenue.html'">
+			<img src="resources/DAPoster.jpg">
+		</button>
+		
+</div>
+
+<div class="concert-container">
+		<header class="con_name" id="bini">
+			<h3>GRAND BINIVERSE</h3>
+				<div class="con_info">
+					<p>SM MALL OF ASIA ARENA<p>
+					<p>JANUARY 14, 2025<p>
+				</div>
+		</header>
+
+		<header class="con_name" id="coj">
+			<h3>SILAKBO</h3>
+				<div class="con_info">
+					<p>SMART ARANETA COLIS EUM<p>
+					<p>FEBRUARY 8, 2025<p>
+				</div>
+		</header>
+
+		<header class="con_name" id="mfive">
+			<h3>MAROON 5</h3>
+				<div class="con_info">
+					<p>SM MALL OF ASIA ARENA<p>
+					<p>JANUARY 29, 2025<p>
+				</div>
+		</header>
+		
+		<header class="con_name" id="cas">
+			<h3>CIGARETTES AFTER SEX</h3>
+				<div class="con_info">
+					<p>SM MALL OF ASIA ARENA<p>
+					<p>JANUARY 14, 2025<p>
+				</div>
+		</header>
+
+		<header class="con_name" id="da">
+			<h3>DECEMBER AVENUE </h3>
+				<div class="con_info">
+					<p>SM MALL OF ASIA ARENA<p>
+					<p>DECEMBER 6, 2024<p>
+				</div>
+		</header>
+</div>
+</div>
+
+		<script src="app.js"></script>
+	</body>
+</html> 
